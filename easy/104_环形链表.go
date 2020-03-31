@@ -1,5 +1,7 @@
 package easy
 
+// ref: https://leetcode-cn.com/problems/linked-list-cycle/
+
 /**
  * Definition for singly-linked list.
  * type ListNode struct {
