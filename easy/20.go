@@ -1,5 +1,9 @@
 package easy
 
+// ref: https://leetcode-cn.com/problems/valid-parentheses/
+
+// 用slice模拟栈
+// 用last表示栈顶
 func IsValid(s string) bool {
 	last := 0
 	d := map[string]string{")":"(", "}": "{", "]": "["}
