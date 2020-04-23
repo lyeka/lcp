@@ -3,14 +3,13 @@ package easy
 // https://leetcode-cn.com/problems/reverse-linked-list/
 
 type ListNode struct {
-	Val int
+	Val  int
 	Next *ListNode
 }
 
-
- // 解法1 迭代
+// 解法1 迭代
 func reverseList(head *ListNode) *ListNode {
-	if head == nil || head.Next == nil{
+	if head == nil || head.Next == nil {
 		return head
 	}
 
@@ -27,7 +26,7 @@ func reverseList(head *ListNode) *ListNode {
 
 // 解法2 递归
 func reverseList2(head *ListNode) *ListNode {
-	if head == nil || head. Next == nil {
+	if head == nil || head.Next == nil {
 		return head
 	}
 
@@ -36,4 +35,3 @@ func reverseList2(head *ListNode) *ListNode {
 	head.Next = nil
 	return p
 }
-
